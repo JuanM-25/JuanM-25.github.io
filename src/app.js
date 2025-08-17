@@ -1,8 +1,3 @@
-const hamburgerButton = document.getElementById('hamburger')
-const navList = document.getElementById('nav-list')
-
-function toggleButton() {
-    navList.classList.toggle('show')
+function toggleMobileMenu() {
+    document.getElementById('menu').classList.toggle('active');
 }
-
-hamburgerButton.addEventListener('click', toggleButton)
