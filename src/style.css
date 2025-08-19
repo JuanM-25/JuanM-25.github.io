@@ -241,7 +241,7 @@ h1 {
         }
     }
 
-    .hero-green {
+    .hero-blue {
         flex: 1;
         background-color: var(--secondary-color);
         border-radius: 30px;
