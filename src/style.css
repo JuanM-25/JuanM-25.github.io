@@ -7,11 +7,11 @@
 }
 
 :root {
-    --primary-color: #84a98c;
-    --secondary-color: #52796f;
-    --tertiary-color: #354f52;
-    --text-color: #cad2c5;
-    --background-color: #2f3e46;
+    --primary-color: #ff6700;
+    --secondary-color: #3a6ea5;
+    --tertiary-color: #004e98;
+    --text-color: #c0c0c0;
+    --background-color: #ebebeb;
 }
 
 body {
@@ -51,7 +51,7 @@ header {
             align-items: center;
             justify-content: center;
             font-size: 32px;
-            background-color: var(--secondary-color);
+            background-color: var(--tertiary-color);
             color: var(--background-color);
             height: 64px;
             width: 64px;
@@ -79,10 +79,10 @@ header {
                 a {
                     display: inline-block;
                     padding: 10px 20px;
-                    color: var(--secondary-color);
+                    color: var(--text-color);
 
                     &:hover {
-                        background-color: var(--primary-color);
+                        background-color: var(--tertiary-color);
                         border-radius: 10px;
                         text-decoration: none;
                     }
@@ -154,7 +154,7 @@ header {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--tertiary-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     border-radius: 10px;
     transition: all 0.3s ease;
 
@@ -166,15 +166,15 @@ header {
 
     &.white {
         background-color: white;
-        color: var(--tertiary-color);
+        color: black;
 
         &:hover {
             background-color: var(--primary-color);
-            color: var(--primary-color);
+            color: var(--text-color);
         }
     }
 
-    &.white {
+    &.black {
         background-color: black;
         color: white;
 
@@ -243,7 +243,7 @@ h1 {
 
     .hero-blue {
         flex: 1;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
         border-radius: 30px;
         padding: 0px 30px;
         display: flex;
@@ -302,14 +302,14 @@ h2 {
     line-height: 1;
     margin-bottom: 10px;
     text-align: center;
-    color: var(--background-color);
+    color: var(--primary-color);
     padding: 30px;
 
     small {
         display: block;
         font-weight: 100;
         font-size: 0.5em;
-        color: var(--primary-color);
+        color: var(--tertiary-color);
     }
 
     @media (max-width:1024px) {
@@ -322,7 +322,7 @@ h3 {
     font-weight: 600;
     line-height: 1;
     margin-bottom: 20px;
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .skills {
@@ -347,7 +347,7 @@ h3 {
 
                 li {
                     display: inline-block;
-                    background-color: var(--primary-color);
+                    background-color: var(--secondary-color);
                     padding: 10px 20px;
                     border-radius: 15px;
                     margin-bottom: 10px;
@@ -462,7 +462,7 @@ h3 {
 
 .footer {
     width: 100%;
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
     padding: 32px 0 16px 0;
 
