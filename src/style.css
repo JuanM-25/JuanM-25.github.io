@@ -7,7 +7,7 @@
 }
 
 :root {
-    --primary-color: #7ae582;
+    --primary-color: #679436;
     --secondary-color: #004e64;
     --text-color: #c0c0c0;
     --background-color: #ebebeb;
@@ -252,8 +252,8 @@ h1 {
         align-items: flex-end;
 
         img {
-            margin-top: -60px;
-            max-width: 420px;
+            margin-top: -40px;
+            max-width: 520px;
             margin-bottom: -10px;
         }
     }
