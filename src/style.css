@@ -7,9 +7,8 @@
 }
 
 :root {
-    --primary-color: #ff6700;
-    --secondary-color: #3a6ea5;
-    --tertiary-color: #004e98;
+    --primary-color: #7ae582;
+    --secondary-color: #004e64;
     --text-color: #c0c0c0;
     --background-color: #ebebeb;
 }
@@ -44,14 +43,14 @@ header {
         padding: 10px;
         align-items: center;
         font-weight: 600;
-        color: var(--tertiary-color);
+        color: var(--secondary-color);
 
         .logo {
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 32px;
-            background-color: var(--tertiary-color);
+            background-color: var(--secondary-color);
             color: var(--background-color);
             height: 64px;
             width: 64px;
@@ -82,7 +81,7 @@ header {
                     color: var(--text-color);
 
                     &:hover {
-                        background-color: var(--tertiary-color);
+                        background-color: var(--secondary-color);
                         border-radius: 10px;
                         text-decoration: none;
                     }
@@ -153,14 +152,14 @@ header {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     color: var(--text-color);
     border-radius: 10px;
     transition: all 0.3s ease;
 
     &:hover {
         background-color: var(--primary-color);
-        color: var(--background-color);
+        color: var(--secondary-color);
         text-decoration: none;
     }
 
@@ -170,7 +169,7 @@ header {
 
         &:hover {
             background-color: var(--primary-color);
-            color: var(--text-color);
+            color: var(--secondary-color);
         }
     }
 
@@ -179,8 +178,8 @@ header {
         color: white;
 
         &:hover {
-            background-color: var(--tertiary-color);
-            color: var(--text-color);
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
         }
     }
 }
@@ -209,7 +208,8 @@ h1 {
 
     .hero-green {
         flex: 1;
-        background-color: var(--background-color);
+        color: var(--text-color);
+        background-color: var(--secondary-color);
         border-radius: 30px;
         padding: 30px;
         display: flex;
@@ -259,7 +259,7 @@ h1 {
 }
 
 .logos {
-    background-color: var(--tertiary-color);
+    background-color: var(--background-color);
     border-radius: 30px;
     padding: 30px 0px;
 
@@ -302,14 +302,14 @@ h2 {
     line-height: 1;
     margin-bottom: 10px;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 30px;
 
     small {
         display: block;
         font-weight: 100;
         font-size: 0.5em;
-        color: var(--tertiary-color);
+        color: var(--primary-color);
     }
 
     @media (max-width:1024px) {
@@ -322,14 +322,15 @@ h3 {
     font-weight: 600;
     line-height: 1;
     margin-bottom: 20px;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .skills {
     .holder-green {
-        background-color: var(--background-color);
+        background-color: var(--secondary-color);
         border-radius: 30px;
         padding: 30px;
+        gap: 60px;
         display: flex;
 
         @media (max-width: 1024px) {
@@ -337,26 +338,28 @@ h3 {
         }
 
         .left-column {
+            color: var(--background-color);
+            flex: 1;
+        }
+
+        .right-column {
             flex: 1;
 
             ul {
                 list-style-type: none;
                 gap: 10px;
-                margin-right: 100px;
+                margin-right: 0px;
                 margin-bottom: 20px;
 
                 li {
                     display: inline-block;
-                    background-color: var(--secondary-color);
+                    color: var(--secondary-color);
+                    background-color: var(--primary-color);
                     padding: 10px 20px;
                     border-radius: 15px;
                     margin-bottom: 10px;
                 }
             }
-        }
-
-        .right-column {
-            flex: 1;
         }
     }
 }
@@ -366,12 +369,13 @@ h3 {
         display: grid;
         grid-gap: 30px;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        height: 960px;
+        grid-template-rows: repeat(2, 1fr);
+        min-height: 960px;
         padding: 5px 5px;
+        
 
         @media(max-width:1024px) {
-            grid-template-rows: repeat(8, 1fr);
+            grid-template-rows: repeat(5, 1fr);
         }
 
         @media(max-width:768px) {
@@ -463,8 +467,9 @@ h3 {
 .footer {
     width: 100%;
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--secondary-color);
     padding: 32px 0 16px 0;
+    
 
     .footer-container {
         max-width: 1440px;
